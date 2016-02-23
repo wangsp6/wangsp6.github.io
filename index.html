@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/cicseci/">cicseci</a>
+      <a class="article-title" href="/2016/cicseci/">CICS ECI 接口编程</a>
     </h1>
   
 
@@ -96,152 +96,152 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right">0 &#xA0;</td>
+<td style="text-align:right">0</td>
 <td>ECI_NO_ERROR</td>
 <td>No error.</td>
 </tr>
 <tr>
-<td style="text-align:right">-1 &#xA0;</td>
+<td style="text-align:right">-1</td>
 <td>ECI_ERR_INVALID_DATA_LENGTH</td>
 <td>Bad data length.<br>This might be because the protocol used to communicate with CICS is unable to send or receive the specified COMMAREA size.</td>
 </tr>
 <tr>
-<td style="text-align:right">-2 &#xA0;</td>
+<td style="text-align:right">-2</td>
 <td>ECI_ERR_INVALID_EXTEND_MODE</td>
 <td>The eci_extend_mode field is not valid.</td>
 </tr>
 <tr>
-<td style="text-align:right">-3 &#xA0;</td>
+<td style="text-align:right">-3</td>
 <td>ECI_ERR_NO_CICS</td>
 <td>Communication with the target CICS server could not be established.</td>
 </tr>
 <tr>
-<td style="text-align:right">-4 &#xA0;</td>
+<td style="text-align:right">-4</td>
 <td>ECI_ERR_CICS_DIED</td>
 <td>Communication with the target CICS server was interrupted during the request.</td>
 </tr>
 <tr>
-<td style="text-align:right">-5 &#xA0;</td>
+<td style="text-align:right">-5</td>
 <td>ECI_ERR_REQUEST_TIMEOUT</td>
 <td>The timeout interval expired before the request was sent to CICS, or the value supplied for timeout is negative.</td>
 </tr>
 <tr>
-<td style="text-align:right">-6 &#xA0;</td>
+<td style="text-align:right">-6</td>
 <td>ECI_ERR_RESPONSE_TIMEOUT</td>
 <td>The ECI call timed out while waiting for a response.</td>
 </tr>
 <tr>
-<td style="text-align:right">-7 &#xA0;</td>
+<td style="text-align:right">-7</td>
 <td>ECI_ERR_TRANSACTION_ABEND</td>
 <td>The CICS transaction abended.<br>The abend code is available in the eci_abend_code field.</td>
 </tr>
 <tr>
-<td style="text-align:right">-8 &#xA0;</td>
+<td style="text-align:right">-8</td>
 <td>ECI_ERR_EXEC_LUW_TOKEN</td>
 <td>The value in eci_luw_token is incorrect.<br>There is no active unit of work associated with the specified token.</td>
 </tr>
 <tr>
-<td style="text-align:right">-9 &#xA0;</td>
+<td style="text-align:right">-9</td>
 <td>ECI_ERR_SYSTEM_ERROR</td>
 <td>An internal system error has occurred.<br>If the problem persists, collect application and Gateway daemon trace and contact your IBM service representative.</td>
 </tr>
 <tr>
-<td style="text-align:right">-10 &#xA0;</td>
+<td style="text-align:right">-10</td>
 <td>ECI_ERR_NULL_WIN_HANDLE</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-12 &#xA0;</td>
+<td style="text-align:right">-12</td>
 <td>ECI_ERR_NULL_MESSAGE_ID</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-13 &#xA0;</td>
+<td style="text-align:right">-13</td>
 <td>ECI_ERR_THREAD_CREATE_ERROR</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-14 &#xA0;</td>
+<td style="text-align:right">-14</td>
 <td>ECI_ERR_INVALID_CALL_TYPE</td>
 <td>The eci_call_type field is not valid.<br>This can occur for the following reasons:<br>The eci_call_type field is not set to a valid call type value.<br>The active CICS request exit rejected the request.<br>The request includes a channel and the destination CICS server is not a defined IPIC server.</td>
 </tr>
 <tr>
-<td style="text-align:right">-15 &#xA0;</td>
+<td style="text-align:right">-15</td>
 <td>ECI_ERR_ALREADY_ACTIVE</td>
 <td>An attempt was made to continue an existing logical unit of work, but there was an outstanding asynchronous call for the same logical unit of work.</td>
 </tr>
 <tr>
-<td style="text-align:right">-16 &#xA0;</td>
+<td style="text-align:right">-16</td>
 <td>ECI_ERR_RESOURCE_SHORTAGE</td>
 <td>There are insufficient resources to communicate with the target CICS server; details might be available in the CICS TG error log files.</td>
 </tr>
 <tr>
-<td style="text-align:right">-17 &#xA0;</td>
+<td style="text-align:right">-17</td>
 <td>ECI_ERR_NO_SESSIONS</td>
 <td>There are insufficient communication resources to communicate with the target CICS server.</td>
 </tr>
 <tr>
-<td style="text-align:right">-18 &#xA0;</td>
+<td style="text-align:right">-18</td>
 <td>ECI_ERR_NULL_SEM_HANDLE</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-19 &#xA0;</td>
+<td style="text-align:right">-19</td>
 <td>ECI_ERR_INVALID_DATA_AREA</td>
 <td>The combination of eci_commarea and eci_commarea_length values is not valid.<br>If eci_commarea is NULL, eci_commarea_length must be zero. If eci_commarea is not NULL, eci_commarea_length must not be zero.</td>
 </tr>
 <tr>
-<td style="text-align:right">-21 &#xA0;</td>
+<td style="text-align:right">-21</td>
 <td>ECI_ERR_INVALID_VERSION</td>
 <td>The eci_version field was not set to ECI_VERSION_2 or ECI_VERSION_2A.</td>
 </tr>
 <tr>
-<td style="text-align:right">-22 &#xA0;</td>
+<td style="text-align:right">-22</td>
 <td>ECI_ERR_UNKNOWN_SERVER</td>
 <td>The target CICS server is unknown to the Gateway daemon.</td>
 </tr>
 <tr>
-<td style="text-align:right">-23 &#xA0;</td>
+<td style="text-align:right">-23</td>
 <td>ECI_ERR_CALL_FROM_CALLBACK</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-25 &#xA0;</td>
+<td style="text-align:right">-25</td>
 <td>ECI_ERR_MORE_SYSTEMS</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-26 &#xA0;</td>
+<td style="text-align:right">-26</td>
 <td>ECI_ERR_NO_SYSTEMS</td>
 <td></td>
 </tr>
 <tr>
-<td style="text-align:right">-27 &#xA0;</td>
+<td style="text-align:right">-27</td>
 <td>ECI_ERR_SECURITY_ERROR</td>
 <td>An invalid combination of user ID and password or password phrase was specified.</td>
 </tr>
 <tr>
-<td style="text-align:right">-28 &#xA0;</td>
+<td style="text-align:right">-28</td>
 <td>ECI_ERR_MAX_SYSTEMS</td>
 <td>The CICS TG has reached its limit on the maximum number of CICS servers.</td>
 </tr>
 <tr>
-<td style="text-align:right">-29 &#xA0;</td>
+<td style="text-align:right">-29</td>
 <td>ECI_ERR_MAX_SESSIONS</td>
 <td>There are insufficient communication resources to complete the request.</td>
 </tr>
 <tr>
-<td style="text-align:right">-30 &#xA0;</td>
+<td style="text-align:right">-30</td>
 <td>ECI_ERR_ROLLEDBACK</td>
 <td>An attempt was made to commit a logical unit of work, but the CICS server was unable to commit the changes, and backed them out instead.</td>
 </tr>
 <tr>
-<td style="text-align:right">-32 &#xA0;</td>
+<td style="text-align:right">-32</td>
 <td>ECI_ERR_NO_REPLY</td>
 <td>No reply.<br>This can occur for the following reasons:<br>The eci_call_type field is set to ECI_GET_REPLY and there are no replies outstanding.<br>The eci_call_type field is set to ECI_GET_SPECIFIC_REPLY and there is no reply for the specified message qualifier.</td>
 </tr>
 <tr>
-<td style="text-align:right">-33 &#xA0;</td>
+<td style="text-align:right">-33</td>
 <td>ECI_ERR_INVALID_MSG_QUAL</td>
 <td>The message qualifier is not in use.</td>
 </tr>
@@ -256,7 +256,7 @@
       
     </div>
     <footer class="article-footer">
-      <!--<a data-url="http://yoursite.com/2016/cicseci/" data-id="ciky9vm940001d8fmi36vbgcg" class="article-share-link">Share</a>-->
+      <!--<a data-url="http://yoursite.com/2016/cicseci/" data-id="cikzkk1o10001h0fmkqhm3c8o" class="article-share-link">Share</a>-->
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cics/">cics</a></li></ul>
@@ -320,7 +320,7 @@
       
     </div>
     <footer class="article-footer">
-      <!--<a data-url="http://yoursite.com/2016/cics1/" data-id="ciky9vm9b0006d8fm91by10gt" class="article-share-link">Share</a>-->
+      <!--<a data-url="http://yoursite.com/2016/cics1/" data-id="cikzkk1of0006h0fm4yifb3tf" class="article-share-link">Share</a>-->
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cics/">cics</a></li></ul>
@@ -371,7 +371,7 @@
       
     </div>
     <footer class="article-footer">
-      <!--<a data-url="http://yoursite.com/2016/awk1/" data-id="ciky9vm9j0009d8fmk8oqigzv" class="article-share-link">Share</a>-->
+      <!--<a data-url="http://yoursite.com/2016/awk1/" data-id="cikzkk1oo0009h0fmjys6uu4g" class="article-share-link">Share</a>-->
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/program/">program</a></li></ul>
@@ -419,7 +419,7 @@
       
     </div>
     <footer class="article-footer">
-      <!--<a data-url="http://yoursite.com/2016/hello-world/" data-id="ciky9vm8q0000d8fmq9vr37eg" class="article-share-link">Share</a>-->
+      <!--<a data-url="http://yoursite.com/2016/hello-world/" data-id="cikzkk1la0000h0fmxa3o1zx5" class="article-share-link">Share</a>-->
       
       
     </footer>
@@ -472,7 +472,7 @@
       <ul>
         
           <li>
-            <a href="/2016/cicseci/">cicseci</a>
+            <a href="/2016/cicseci/">CICS ECI 接口编程</a>
           </li>
         
           <li>
